@@ -308,24 +308,46 @@ section {
   transition: all 0.4s ease-in-out;
   width: 60%;
 }
+.about-stats .progress-bars .progress-bar .progress-con .progress .react {
+  width: 93%;
+}
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 80%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 95%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .js {
   width: 75%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .react {
-  width: 60%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .node {
-  width: 87%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .python {
+.about-stats .progress-bars .progress-bar .progress-con .progress .css {
   width: 70%;
 }
+.about-stats .progress-bars .progress-bar .progress-con .progress .js {
+  width: 96%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .node {
+  width: 97%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .mongoDB {
+  width: 85%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .tailwind {
+  width: 80%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .redux {
+  width: 50%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .type {
+  width: 75%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .sql {
+  width: 78%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .git {
+  width: 80%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .others {
+  width: 65%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .web3 {
+  width: 50%;
+}
+
 
 .stat-title {
   text-transform: uppercase;
@@ -627,16 +649,20 @@ section {
 .main-btn {
   border-radius: 30px;
   color: inherit;
-  font-weight: 600;
+  font-weight: 800;
   position: relative;
   border: 1px solid var(--color-secondary);
   display: flex;
   align-self: flex-start;
   align-items: center;
   overflow: hidden;
+  cursor: pointer;
 }
 .main-btn .btn-text {
-  padding: 0 2rem;
+  padding: 10px 55px;
+  font-weight: 600;
+  font-size: medium;
+  cursor: pointer;
 }
 .main-btn .btn-icon {
   background-color: var(--color-secondary);
