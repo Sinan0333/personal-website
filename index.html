@@ -250,48 +250,6 @@
                 Here is some of my work that I've done in various programming languages.
             </p>
             <div class="portfolios">
-                <div class="portfolio-item" >
-                    <div class="image">
-                        <img src="img/Bose-logo-640x640.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3 ><a href="https://sinan0333.github.io/Bose/"> Tap to open </a></h3>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/LAYS-Logo-Vector-scaled.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <a href="https://sinan0333.github.io/Homelays/"> <h3>Tap to open</h3></a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/spacex.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <a href="https://sinan0333.github.io/spaceX.sinan/"> <h3>Tap to open</h3></a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/portfolio.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <a href=""> <h3>Tap to open</h3></a>
-                       
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/fashion arclight.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <a href="https://fashionarclight.shop/"> <h3>Tap to open</h3></a>
-                       
-                    </div>
-                </div>
         </section>
         <section class="container" id="blogs">
             <div class="blogs-content">
@@ -462,25 +420,38 @@
     <div class="theme-btn">
         <i class="fas fa-adjust"></i>
     </div>
-    <script src="app.js"></script>
-    <script>
-        $("#submit-form").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbyLfptt4iZXDDaxic5R8-b4Zu_6aJJBh8nbItsg5GTrgwjnbgoHGA9z6VB6DZ_QhMxJtQ/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error:function (err){
-                    alert("Something Error")
-    
-                }
-            })
-        })
-    </script>
+
+    <!-- Portfolio Modal -->
+    <div id="portfolioModal" class="custom-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            
+            <div class="modal-image-wrapper">
+            <img id="modalImage" src="" alt="Project Image">
+            </div>
+            
+            <h2 id="modalTitle" class="modal-title"></h2>
+            <h2 id="modalSubtitle" class="modal-subtitle">Project Description</h2>
+            
+            <p id="modalDescription" class="modal-description"></p>
+            
+            <!-- Features Section -->
+            <h3 class="modal-features-title">Key Features</h3>
+            <ul id="modalFeatures" class="modal-features-list"></ul>
+            
+            <!-- Technologies Section -->
+            <h3 class="modal-tech-title">Technologies Used</h3>
+            <div id="modalTech" class="modal-technologies-grouped"></div>
+            
+            <a id="modalLink" href="#" target="_blank" class="modal-link">View Project</a>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="/scripts/works.js"></script>
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/portfolio-item.js"></script>
+    <script src="/scripts/form-submit.js"></script>
+    <script src="/scripts/modal.js"></script>
 </body>
 </html>

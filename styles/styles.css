@@ -432,6 +432,7 @@ section {
 .portfolios .portfolio-item {
   position: relative;
   border-radius: 15px;
+  cursor: pointer;
 }
 .portfolios .portfolio-item img {
   width: 100%;
@@ -719,6 +720,178 @@ section {
 .about-container .left-about p {
   padding-left: 0;
 }
+
+/* Modal Css Start*/
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 29, 43, 0.95);
+  backdrop-filter: blur(6px);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.custom-modal.active {
+  display: flex;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+ .modal-content {
+  background-color: var(--color-primary);
+  padding: 2rem;
+  border-radius: var(--br-sm-2);
+  box-shadow: var(--box-shadow-1);
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh; 
+  text-align: center;
+  color: var(--color-white);
+  position: relative;
+  animation: scaleIn 0.3s ease-in-out;
+  overflow-y: auto;
+  scrollbar-width: thin; 
+}
+
+/* Custom Scrollbar Styling */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background-color: #ff7f50; 
+}
+
+/* For Firefox */
+.modal-content {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-secondary) rgba(255, 255, 255, 0.05);
+}
+
+@keyframes scaleIn {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  font-size: 1.8rem;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: var(--color-secondary);
+}
+
+.modal-image-wrapper {
+  margin-bottom: 1rem;
+}
+
+.modal-image-wrapper img {
+  width: 50%;
+  height: auto;
+  border-radius: var(--br-sm-2);
+  box-shadow: var(--box-shadow-1);
+}
+
+.modal-title {
+  font-size: 1.8rem;
+}
+.modal-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-secondary);
+  color: var(--color-grey-4)
+}
+
+.modal-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--color-grey-4);
+}
+
+.modal-tech {
+  font-weight: bold;
+  color:var(--color-secondary);
+}
+
+
+.modal-link {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: var(--color-secondary);
+  color: var(--color-white);
+  border-radius: var(--br-sm-2);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.modal-link:hover {
+  background: var(--color-white);
+  color: var(--color-primary);
+}
+
+.modal-features-title,
+.modal-tech-title {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem;
+  color: var(--color-secondary);
+  text-align: left;
+}
+
+.modal-features-list {
+  list-style: disc;
+  margin: 0 0 1rem 1.2rem;
+  text-align: left;
+  color: var(--color-grey-4);
+  font-size: 0.95rem;
+}
+
+.modal-technologies-grouped {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.modal-technologies-grouped p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-grey-4);
+}
+
+.modal-technologies-grouped strong {
+  color: var(--color-secondary);
+  font-size: 1rem;
+}
+/* Modal Css End */
 
 @media screen and (max-width: 600px) {
   header {
