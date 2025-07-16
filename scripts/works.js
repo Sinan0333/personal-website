@@ -28,4 +28,53 @@ const works = [
     },
     link: "https://mediheal.sinan-dev.in/home",
   },
+  {
+    img: "/img/works/fashion-arclight.png",
+    title: "Fashion Arclight",
+    subtitle: "E-commerce Website for Men's Wear",
+    description:
+      "E-commerce Website specializing in men's wear with user and admin modules.",
+    features: [
+      "Developed an e-commerce platform specializing in men’s wear with user and admin modules.",
+      "Users can manage accounts, orders, wallets and utilize features such as wishlist, cart, search, and filters.",
+      "Implemented purchase options featuring offers and coupons, with added functionality for users to leave reviews after purchases.",
+      "Implemented user authentication using Nodemailer for email verification.",
+      "Implemented RESTful APIs for seamless communication between frontend and backend.",
+      "Integrated secure payment gateways including Razorpay, wallet options, and Cash on Delivery (COD).",
+      "Utilized EJS (Templating Engine) for front-end development.",
+      "Followed MVC architecture and created admin-side interfaces for various management tasks.",
+      "Deployed using AWS Cloud Service, Nginx, Certbot, and PM2 for reliable, scalable, and secure performance.",
+    ],
+    tech: {
+      Frontend: ["EJS"],
+      Backend: ["Node.js", "Express.js"],
+      Database: ["MongoDB"],
+      Authentication: ["Nodemailer"],
+      Payments: ["Razorpay", "Wallet", "Cash on Delivery"],
+      Deployment: ["AWS", "Nginx", "Certbot", "PM2"],
+      Architecture: ["MVC"],
+    },
+    link: "https://fashion-arclight.sinan-dev.in",
+  },
+  {
+    img: "/img/works/gsm-nesi.png",
+    title: "GSM NESI",
+    subtitle: "E-commerce Platform for GSM Products",
+    description:
+      "An e-commerce platform for selling GSM products online, featuring dynamic product filtering, exclusive offers, and an admin dashboard for efficient management of categories, products, and promotions.",
+    features: [
+      "Users can browse products without login or signup and view detailed product information.",
+      "Access the latest offers and deals for cost-effective purchases.",
+      "Advanced product filtering options to help users find the right products easily.",
+      "Secure and user-friendly checkout process.",
+      "Admin dashboard provides insights into sales and quick progress tracking.",
+      "Admin can dynamically manage categories, products, and offers from the backend.",
+    ],
+    tech: {
+      Frontend: ["React.js", "Tailwind CSS"],
+      Backend: ["Node.js", "Express.js"],
+      Database: ["MongoDB"],
+    },
+    link: "https://gsm-nesi.sinan-dev.in/",
+  },
 ];

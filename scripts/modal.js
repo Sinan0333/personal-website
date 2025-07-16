@@ -5,6 +5,7 @@ const closeModalBtn = document.querySelector(".close-btn");
 // Modal Elements
 const modalImage = document.getElementById("modalImage");
 const modalTitle = document.getElementById("modalTitle");
+const modalSubtitle = document.getElementById("modalSubtitle");
 const modalDescription = document.getElementById("modalDescription");
 const modalFeatures = document.getElementById("modalFeatures");
 const modalTech = document.getElementById("modalTech");
@@ -21,6 +22,7 @@ container.addEventListener("click", (e) => {
   // Set basic info
   modalImage.src = project.img;
   modalTitle.textContent = project.title;
+  modalSubtitle.textContent = project.subtitle;
   modalDescription.textContent = project.description;
   modalLink.href = project.link;
 
@@ -28,6 +30,7 @@ container.addEventListener("click", (e) => {
   modalFeatures.innerHTML = "";
   project.features.forEach(feature => {
     const li = document.createElement("li");
+    li.style.listStyle = "disc"
     li.textContent = feature;
     modalFeatures.appendChild(li);
   });

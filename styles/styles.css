@@ -833,6 +833,7 @@ section {
   font-size: 1rem;
   margin-bottom: 1rem;
   color: var(--color-grey-4);
+  text-align: left;
 }
 
 .modal-tech {
@@ -879,6 +880,7 @@ section {
   gap: 10px;
   text-align: left;
   margin-bottom: 1rem;
+  padding-left: 4%;
 }
 
 .modal-technologies-grouped p {
@@ -888,7 +890,6 @@ section {
 }
 
 .modal-technologies-grouped strong {
-  color: var(--color-secondary);
   font-size: 1rem;
 }
 /* Modal Css End */
