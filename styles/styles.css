@@ -716,6 +716,14 @@ section {
   font-weight: 800;
   font-size: 6.3rem;
 }
+.sub-title{
+  text-align: center;
+  color: var(--color-grey-5);
+  font-weight: 800;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-top: 5%;
+}
 
 .about-container .left-about p {
   padding-left: 0;
