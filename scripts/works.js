@@ -77,4 +77,73 @@ const works = [
     },
     link: "https://gsm-nesi.sinan-dev.in/",
   },
+  {
+    img: "/img/works/brew-and-bite.png",
+    title: "Brew & Bite Demo",
+    subtitle: "Restaurant Website",
+    description:
+      "A demo website for a local restaurant, showcasing its menu, services, and contact information.",
+    features: [
+      "Users can browse the menu, view services, and contact the restaurant.",
+      "The website is responsive and optimized for various devices.",
+    ],
+    tech: {
+      Frontend: ["React.js", "Tailwind CSS", "Vite"],
+    },
+    link: "https://brew-and-bite.sinan-dev.in",
+  },
+  {
+    img: "/img/works/typeless.png",
+    title: "TypeLess",
+    subtitle: "Chrome Extension for Smart Form Autofill",
+    description:
+      "TypeLess is a productivity-focused Chrome extension that helps users save their personal details once and automatically fill web forms across websites. The extension reduces repetitive typing by intelligently detecting form fields and filling them instantly through a button or keyboard shortcut while keeping user data stored locally for privacy.",
+    features: [
+      "Save personal details once and reuse them to autofill forms across different websites.",
+      "One-click autofill and keyboard shortcut support for faster form filling.",
+      "Dynamic form field detection using input attributes such as id, name, placeholder, and labels.",
+      "Privacy-first design where all user data is stored locally using Chrome storage APIs.",
+      "Clean popup interface for quick access and data management.",
+      "Options page for managing and updating saved user information.",
+      "Content scripts interact with web pages to detect and populate form fields.",
+      "Background service worker manages extension events and communication between components.",
+      "Designed using Manifest V3 architecture for modern Chrome extension compatibility.",
+    ],
+    tech: {
+      Frontend: ["HTML", "CSS", "JavaScript"],
+      ExtensionAPI: [
+        "Chrome Extensions API",
+        "Manifest V3",
+        "Content Scripts",
+        "Background Service Worker",
+      ],
+      Storage: ["Chrome Storage API"],
+      Tools: ["Vite", "Git"],
+    },
+    link: "https://chromewebstore.google.com/",
+  },
+  {
+    img: "/img/works/react-skeletonify.jpg",
+    title: "React Skeletonify",
+    subtitle: "Lightweight React Skeleton Loader Library",
+    description:
+      "React Skeletonify is a lightweight and customizable React library designed to improve user experience during data loading states. It allows developers to easily add skeleton loaders to their React applications with minimal setup. The library supports multiple skeleton components such as text, avatar, card, and image placeholders while maintaining full flexibility with styling and layout.",
+    features: [
+      "Lightweight React library for implementing skeleton loading placeholders.",
+      "Pre-built skeleton components including text, avatar, image, and card loaders.",
+      "Highly customizable styles and sizes to match different UI designs.",
+      "Smooth loading animations for better perceived performance.",
+      "Easy integration with any React project with minimal configuration.",
+      "Reusable component-based architecture for scalable UI development.",
+      "Supports modern React setups including Vite and Next.js.",
+      "Designed to improve user experience during asynchronous data fetching.",
+    ],
+    tech: {
+      Library: ["React.js"],
+      Styling: ["CSS", "Tailwind CSS"],
+      BuildTools: ["Vite"],
+      PackageManager: ["npm"],
+    },
+    link: "https://npmjs.com/package/react-skeletonify",
+  },
 ];
