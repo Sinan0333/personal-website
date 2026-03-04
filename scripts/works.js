@@ -27,6 +27,7 @@ const works = [
       Architecture: ["Repository Pattern"],
     },
     link: "https://mediheal.sinan-dev.in/home",
+    dialog: true,
   },
   {
     img: "/img/works/fashion-arclight.png",
@@ -55,6 +56,7 @@ const works = [
       Architecture: ["MVC"],
     },
     link: "https://fashion-arclight.sinan-dev.in",
+    dialog: true,
   },
   {
     img: "/img/works/gsm-nesi.png",
@@ -76,6 +78,7 @@ const works = [
       Database: ["MongoDB"],
     },
     link: "https://gsm-nesi.sinan-dev.in/",
+    dialog: true,
   },
   {
     img: "/img/works/brew-and-bite.png",
@@ -91,6 +94,7 @@ const works = [
       Frontend: ["React.js", "Tailwind CSS", "Vite"],
     },
     link: "https://brew-and-bite.sinan-dev.in",
+    dialog: true,
   },
   {
     img: "/img/works/typeless.png",
@@ -121,6 +125,7 @@ const works = [
       Tools: ["Vite", "Git"],
     },
     link: "https://chromewebstore.google.com/",
+    dialog: true,
   },
   {
     img: "/img/works/react-skeletonify.jpg",
@@ -145,5 +150,6 @@ const works = [
       PackageManager: ["npm"],
     },
     link: "https://npmjs.com/package/react-skeletonify",
+    dialog: true,
   },
 ];

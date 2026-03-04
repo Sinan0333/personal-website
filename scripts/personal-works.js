@@ -15,6 +15,7 @@ const personalWorks = [
       API: ["TMDB API"],
     },
     link: "https://bbc-i-player.vercel.app/",
+    dialog: true,
   },
   {
     img: "/img/works/netflix-clone.png",
@@ -33,6 +34,7 @@ const personalWorks = [
       API: ["TMDB API"],
     },
     link: "https://netflix-clone-eosin-rho.vercel.app",
+    dialog: true,
   },
   {
     img: "/img/works/tic-tac-toe.png",
@@ -53,6 +55,7 @@ const personalWorks = [
       RealTime: ["Socket.IO"],
     },
     link: "https://tic-tac-toe-client-dun.vercel.app",
+    dialog: true,
   },
   {
     img: "/img/works/zoofari.png",
@@ -68,20 +71,26 @@ const personalWorks = [
       Frontend: ["React.js", "Tailwind CSS", "GSAP"],
     },
     link: "https://zoofari.vercel.app/",
+    dialog: true,
   },
   {
+    dialog: false,
     img: "/img/works/space-x-clone.png",
   },
   {
+    dialog: false,
     img: "/img/works/olx-clone.png",
   },
   {
+    dialog: false,
     img: "/img/works/bose-clone.png",
   },
   {
+    dialog: false,
     img: "/img/works/lays-clone.png",
   },
-    {
+  {
+    dialog: false,
     img: "/img/works/iphone-anim.png",
   },
 ];

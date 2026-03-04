@@ -14,7 +14,8 @@ const modalLink = document.getElementById("modalLink");
 
 // Helper to populate and show modal
 function showProjectModal(project) {
-  if (!project) return;
+  // Only open modal when project exists and has dialog explicitly true
+  if (!project || project.dialog !== true) return;
 
   modalImage.src = project.img || "";
   modalTitle.textContent = project.title || "";
